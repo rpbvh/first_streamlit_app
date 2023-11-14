@@ -29,7 +29,7 @@ streamlit.text(fruityvice_response.json());
 
 
 # Normalize
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json());
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json());
 
 # output Normalized data
 streamlit.dataframe(fruityvice_normalized);
